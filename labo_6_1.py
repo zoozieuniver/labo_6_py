@@ -60,14 +60,14 @@ error_count_cols = 0
 
 for i in range(n):
     if row_sums[i] != target_sum:
-        error_count_rows +=1
-        if error_count_rows == 0:
+        error_count_rows += 1
+        if error_count_rows == 1:
             bad_row = i
     
     if col_sums[i] != target_sum:
-        error_count_cols +=1
-        if error_count_cols:
-            bad_col=1
+        error_count_cols += 1
+        if error_count_cols == 1: 
+            bad_col = i            
         
 #checking our errors
 
