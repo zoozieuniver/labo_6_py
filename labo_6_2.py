@@ -50,7 +50,7 @@ while True:
 
     if k != -1:
         # Твій фінальний висновок
-        if len(history) - k > 1:
+        if len(history) - k >= 1:
             print("У вас петля почалася на", k, "кроці з періодичністю", len(history) - k, "поколінь")
         else:
             print("Ваші дані дійшли кінця на", len(history), "кроці")
